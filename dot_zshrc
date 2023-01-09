@@ -3,6 +3,9 @@ fpath+=$HOME/.local/share/zsh/site-functions
 
 EDITOR=nano
 
+# Z
+source /opt/homebrew/etc/profile.d/z.sh
+
 # ANTIDOTE
 source /opt/homebrew/opt/antidote/share/antidote/antidote.zsh
 antidote load ${ZDOTDIR:-~}/.zsh_plugins.txt
