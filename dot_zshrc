@@ -1,8 +1,17 @@
 # DIRECTORIES
 ZDOTDIR=$HOME/.config/zsh
-fpath+=$HOME/.local/share/zsh/site-functions
+FPATH+=$HOME/.local/share/zsh/site-functions
 
 EDITOR=nano
+
+# BREW SITE FUNCTIONS
+if type brew &>/dev/null
+then
+  FPATH+="/opt/homebrew/share/zsh/site-functions"
+  
+  autoload -Uz compinit
+  compinit
+fi
 
 # ZPROF
 zmodload zsh/zprof
