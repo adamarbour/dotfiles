@@ -6,3 +6,7 @@ EDITOR=nano
 # ANTIDOTE
 source /opt/homebrew/opt/antidote/share/antidote/antidote.zsh
 antidote load
+
+
+# NEOFETCH
+neofetch
