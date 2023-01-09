@@ -4,7 +4,6 @@ fpath+=$HOME/.local/share/zsh/site-functions
 EDITOR=nano
 
 # Z
-$_Z_DATA=$HOME/.local/share/z
 source /opt/homebrew/etc/profile.d/z.sh
 
 # ANTIDOTE
