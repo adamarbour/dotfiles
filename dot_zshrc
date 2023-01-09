@@ -1,7 +1,11 @@
+# DIRECTORIES
 ZDOTDIR=$HOME/.config/zsh
 fpath+=$HOME/.local/share/zsh/site-functions
 
 EDITOR=nano
+
+# ZPROF
+zmodload zsh/zprof
 
 # Z
 source /opt/homebrew/etc/profile.d/z.sh
