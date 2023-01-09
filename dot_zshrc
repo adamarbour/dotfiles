@@ -5,7 +5,7 @@ EDITOR=nano
 
 # ANTIDOTE
 source /opt/homebrew/opt/antidote/share/antidote/antidote.zsh
-antidote load
+antidote load ${ZDOTDIR:-~}/.zsh_plugins.txt
 
 
 # NEOFETCH
