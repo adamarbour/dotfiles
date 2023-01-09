@@ -1,6 +1,7 @@
 # DIRECTORIES
-ZDOTDIR=$HOME/.config/zsh
-FPATH+=$HOME/.local/share/zsh/site-functions
+PATH=/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:$PATH
+ZDOTDIR="$HOME/.zsh"
+ZGEN_RESET_ON_CHANGE=(${HOME}/.zshrc)
 
 EDITOR=nano
 
@@ -9,7 +10,20 @@ source /opt/homebrew/etc/profile.d/z.sh
 
 # ZGENOM
 source "${HOME}/.zgenom/zgenom.zsh"
-zgenom autoupdate
+zgenom autoupdate --self 14 --plugin 7
+
+if ! zgenom saved; then
+  echo "Creating zgenom save..."
+
+  # bulk load
+  zgenom loadall <<EOPLUGINS
+    ptavares/zsh-direnv
+EOPLUGINS
+
+  zgenom save
+  zgenom compile "$HOME/.zshrc"
+  zgenom compile $ZDOTDIR
+fi
 
 
 # NEOFETCH
