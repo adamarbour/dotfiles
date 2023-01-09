@@ -4,22 +4,11 @@ FPATH+=$HOME/.local/share/zsh/site-functions
 
 EDITOR=nano
 
-# BREW SITE FUNCTIONS
-if type brew &>/dev/null
-then
-  FPATH+="/opt/homebrew/share/zsh/site-functions"
-fi
-
-# ZPROF
-zmodload zsh/zprof
-
 # Z
 source /opt/homebrew/etc/profile.d/z.sh
 
-# ANTIDOTE
-source /opt/homebrew/opt/antidote/share/antidote/antidote.zsh
-antidote load ${ZDOTDIR:-~}/.zsh_plugins.txt
-
+# ZGEN
+source "${HOME}/.zgen/zgen.zsh"
 
 # NEOFETCH
 neofetch
