@@ -7,8 +7,10 @@ EDITOR=nano
 # Z
 source /opt/homebrew/etc/profile.d/z.sh
 
-# ZGEN
-source "${HOME}/.zgen/zgen.zsh"
+# ZGENOM
+source "${HOME}/.zgenom/zgenom.zsh"
+zgenom autoupdate
+
 
 # NEOFETCH
 neofetch
