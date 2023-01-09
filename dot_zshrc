@@ -1,0 +1,8 @@
+ZDOTDIR=$HOME/.config/zsh
+fpath+=$HOME/.local/share/zsh/site-functions
+
+EDITOR=nano
+
+# ANTIDOTE
+source /opt/homebrew/opt/antidote/share/antidote/antidote.zsh
+antidote load
