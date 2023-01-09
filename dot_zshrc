@@ -8,9 +8,6 @@ EDITOR=nano
 if type brew &>/dev/null
 then
   FPATH+="/opt/homebrew/share/zsh/site-functions"
-  
-  autoload -Uz compinit
-  compinit
 fi
 
 # ZPROF
