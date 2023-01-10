@@ -38,7 +38,7 @@ color:
 # When "classic" is set, this is set to "date".
 # Possible values: date, relative, '+<date_format>'
 # `date_format` will be a `strftime` formatted value. e.g. `date: '+%d %b %y %X'` will give you a date like this: 17 
-Jun 21 20:14:55
+# Jun 21 20:14:55
 date: date
 
 # == Dereference ==
@@ -87,12 +87,12 @@ recursion:
   enabled: false
   # How deep the recursion should go. This has to be a positive integer. Leave
   # it unspecified for (virtually) infinite.
-  # depth: 3
+  # depth: 2
 
 # == Size ==
 # Specifies the format of the size column.
 # Possible values: default, short, bytes
-size: default
+size: short
 
 # == Permission ==
 # Specify the format of the permission column
@@ -134,4 +134,4 @@ symlink-arrow: ⇒
 # == Header ==
 # Whether to display block headers.
 # Possible values: false, true
-header: false
+header: true
