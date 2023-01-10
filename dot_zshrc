@@ -34,5 +34,17 @@ fi
 # THE FUCK
 eval $(thefuck --alias)
 
+# ALIAS
+alias man=tldr
+alias ping=prettyping
+alias cat=bat
+alias ls=lsd
+alias l=ls
+alias la="ls -a"
+alias ll="ls -l"
+alias lla="ls -la"
+alias vi="/opt/homebrew/bin/vim"
+alias vim="/opt/homebrew/bin/vim"
+
 # NEOFETCH
 neofetch
