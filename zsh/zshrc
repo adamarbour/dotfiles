@@ -1,0 +1,6 @@
+#!/bin/zsh
+#
+# .zshrc - interactive sessions
+#
+
+setopt extended_glob

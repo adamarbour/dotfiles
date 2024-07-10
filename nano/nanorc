@@ -1,0 +1,7 @@
+# Syntax highlighting
+include "/usr/share/nano/*.nanorc"
+include "/usr/share/nano/extra/*.nanorc"
+
+# Options
+set autoindent
+set tabsize 4

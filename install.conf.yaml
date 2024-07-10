@@ -1,5 +1,20 @@
+- defaults:
+    link:
+      create: true
+      relink: true
+ 
 - clean: ['~']
+- clean:
+    ~/:
+      force: true
+    ~/.config:
+      recursive: true
 
 - link:
+    ~/.zshenv: zsh/zshenv
+    ~/.config/zsh/.zprofile: zsh/zprofile
+    ~/.config/zsh/.zshrc: zsh/zshrc
+    ~/.config/nano/nanorc: nano/nanorc
 
-
+- shell:
+  - [git submodule update --init --recursive, Installing submodules]

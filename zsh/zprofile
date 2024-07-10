@@ -1,0 +1,11 @@
+#!/bin/zsh
+#
+# .zprofile - loads at login
+#
+
+typeset -gU path fpath
+path=(
+	$HOME/{,s}bin(N)
+	/usr/local/{,s}bin(N)
+	$path
+)
