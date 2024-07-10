@@ -14,6 +14,10 @@
     ~/.zshenv: zsh/zshenv
     ~/.config/zsh/.zprofile: zsh/zprofile
     ~/.config/zsh/.zshrc: zsh/zshrc
+    ~/.config/zsh/.zsh_plugins.txt: zsh/zsh_plugins
+    ~/.config/zsh/antidote:
+      glob: true
+      path: antidote/*
     ~/.config/nano/nanorc: nano/nanorc
 
 - shell:
