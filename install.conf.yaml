@@ -19,6 +19,9 @@
       glob: true
       path: antidote/*
     ~/.config/nano/nanorc: nano/nanorc
+    ~/.config/sx/sxrc: sx/sxrc
+    ~/.config/sx/xauthority: sx/xauthority
+    ~/.config/tmux/tmux.conf: tmux/tmux.conf
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
